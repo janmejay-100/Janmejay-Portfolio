@@ -495,8 +495,10 @@ left: calc(52% - 275px);
 
 /* Hero items – animate in on load via CSS animation */
 .hero-animate {
-  opacity: 0;
-  animation: hero-in 0.7s ease forwards;
+  opacity: 1;
+  animation: none;
+  transform: none;
+  filter: none;
 }
 
 
