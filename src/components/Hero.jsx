@@ -1,5 +1,5 @@
 
-import { ChevronDown, FolderOpen, Mail } from 'lucide-react'
+import { ChevronDown, FolderOpen, Mail, Download } from 'lucide-react'
 import { useTypewriter } from '../hooks/useTypewriter'
 import CodeWindow from './CodeWindow'
 
@@ -51,8 +51,10 @@ export default function Hero() {
               turning ideas into practical digital solutions.
             </p>
 
-            {/* Buttons */}
+            {/* Action buttons */}
             <div className="hero-actions hero-animate hero-animate-5">
+
+              {/* View Projects */}
               <button
                 id="hero-cta-projects"
                 className="btn btn-primary"
@@ -62,6 +64,18 @@ export default function Hero() {
                 View Projects
               </button>
 
+              {/* Download Resume */}
+              <a
+                id="hero-cta-resume"
+                href={`${import.meta.env.BASE_URL}Resume.pdf`}
+                download="Janmejay-Sahoo-Resume.pdf"
+                className="btn btn-resume"
+              >
+                <Download size={17} />
+                Download Resume
+              </a>
+
+              {/* Get in Touch */}
               <button
                 id="hero-cta-contact"
                 className="btn btn-outline"
@@ -70,15 +84,17 @@ export default function Hero() {
                 <Mail size={17} />
                 Get in Touch
               </button>
-            </div>
 
+            </div>
           </div>
 
+          {/* Code Window */}
           <CodeWindow />
 
         </div>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="hero-scroll" aria-hidden="true">
         <span>Scroll</span>
         <ChevronDown size={16} />

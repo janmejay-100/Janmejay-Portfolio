@@ -1711,3 +1711,60 @@ left: calc(52% - 275px);
     transition: none !important;
   }
 }
+/* MOBILE FIX: Stop unwanted zoom and movement animations */
+@media (max-width: 768px) {
+
+  /* Show all content immediately */
+  .fade-up,
+  .fade-up.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Stop animated background scaling */
+  .orb,
+  .code-window-wrap::before,
+  .about-avatar-glow {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  /* Remove touch-triggered scaling and lifting */
+  .glass-card:hover,
+  .btn-primary:hover,
+  .btn-outline:hover,
+  .stat-card:hover {
+    transform: none !important;
+    filter: none !important;
+  }
+
+  /* Disable remaining decorative animations */
+  .hero-scroll,
+  .hero-badge .dot {
+    animation: none !important;
+  }
+
+  /* Prevent horizontal overflow */
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+/* Resume Download Button */
+.btn-resume {
+  background: #B4233F;
+  color: #FFFFFF;
+  border: 1px solid #B4233F;
+  box-shadow: 0 0 14px rgba(180, 35, 63, 0.22);
+}
+
+.btn-resume:hover {
+  background: #921B34;
+  border-color: #921B34;
+  color: #FFFFFF;
+  box-shadow: 0 0 22px rgba(180, 35, 63, 0.4);
+  transform: translateY(-2px);
+}
