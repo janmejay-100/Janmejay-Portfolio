@@ -1768,3 +1768,22 @@ left: calc(52% - 275px);
   box-shadow: 0 0 22px rgba(180, 35, 63, 0.4);
   transform: translateY(-2px);
 }
+/* Mobile viewport stability */
+@media screen and (max-width: 768px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    min-width: 320px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+}
