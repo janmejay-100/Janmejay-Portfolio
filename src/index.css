@@ -1787,3 +1787,123 @@ left: calc(52% - 275px);
     max-width: 100%;
   }
 }
+
+/* =========================================
+   MOBILE LAYOUT — CENTERED DESIGN
+   Desktop styling remains unchanged
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* HERO SECTION */
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-badge {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-name,
+  .hero-roles,
+  .hero-desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    justify-content: center;
+  }
+
+  /* ABOUT SECTION */
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-avatar-wrap {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .about-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-info .section-label {
+    justify-content: center;
+  }
+
+  .about-info .section-title,
+  .about-text {
+    text-align: center;
+  }
+
+  /* CENTER SECTION HEADINGS */
+  .section-label {
+    justify-content: center;
+  }
+
+  .section-title,
+  .section-subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* PROJECTS */
+  #projects .container > div:first-child {
+    text-align: center;
+  }
+
+  /* EDUCATION */
+  #education .container {
+    text-align: center;
+  }
+
+  /* ACHIEVEMENTS */
+  #achievements .container {
+    text-align: center;
+  }
+
+  /* CONTACT */
+  #contact .container {
+    text-align: center;
+  }
+}
+/* Contact button alignment */
+#contact-submit {
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  #contact-submit {
+    align-self: center;
+  }
+}

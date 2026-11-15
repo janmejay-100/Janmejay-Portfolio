@@ -155,14 +155,13 @@ export default function Contact() {
               </div>
 
               <button
-                type="submit"
-                id="contact-submit"
-                className="btn btn-primary"
-                style={{ alignSelf: 'flex-start' }}
-              >
-                <Send size={16} />
-                Send Message
-              </button>
+  type="submit"
+  id="contact-submit"
+  className="btn btn-primary"
+>
+  <Send size={16} />
+  Send Message
+</button>
             </form>
           </div>
         </div>
